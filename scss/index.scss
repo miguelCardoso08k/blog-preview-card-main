@@ -1,0 +1,85 @@
+@import "./variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: $primary;
+  font-family: $font;
+  font-size: 1em;
+  @include flex(column, center, center);
+  .card {
+    background-color: $white;
+    border-radius: 5%;
+    border: 1px solid $black;
+    box-shadow: 8px 6px 1px $black;
+    cursor: pointer;
+    height: 500px;
+    width: 375px;
+    padding: 1.1em;
+    @include flex(column, center, center);
+
+    .content {
+      @include flex(column, space-between, flex-start);
+      height: 100%;
+      width: 100%;
+      gap: 0.2em;
+      .postImage {
+        img {
+          border-radius: 5%;
+          width: 100%;
+        }
+      }
+      .postType {
+        p {
+          background-color: $primary;
+          border-radius: 7%;
+          font-weight: 800;
+          padding: 0.2em;
+        }
+      }
+      .postDate {
+        p {
+          font-weight: 500;
+          font-size: 0.8em;
+        }
+      }
+      .postTitle {
+        h1 {
+          font-size: 1.2em;
+          font-weight: 900;
+        }
+      }
+      .postDescription {
+        p {
+          color: $grey;
+        }
+      }
+      .userInfo {
+        @include flex(row, flex-start, center);
+        gap: 1em;
+        img {
+          width: 2em;
+          height: 2em;
+        }
+      }
+    }
+    & :hover {
+      .postTitle {
+        color: $primary;
+      }
+    }
+    @include media($mobile) {
+      height: 480px;
+      width: 280px;
+    }
+  }
+}

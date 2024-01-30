@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+/* Breakpoints*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: hsl(47, 88%, 63%);
+  font-family: "Figtree", sans-serif;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5%;
+  border: 1px solid hsl(0, 0%, 7%);
+  box-shadow: 8px 6px 1px hsl(0, 0%, 7%);
+  cursor: pointer;
+  height: 500px;
+  width: 375px;
+  padding: 1.1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .card .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  gap: 0.2em;
+}
+body .card .content .postImage img {
+  border-radius: 5%;
+  width: 100%;
+}
+body .card .content .postType p {
+  background-color: hsl(47, 88%, 63%);
+  border-radius: 7%;
+  font-weight: 800;
+  padding: 0.2em;
+}
+body .card .content .postDate p {
+  font-weight: 500;
+  font-size: 0.8em;
+}
+body .card .content .postTitle h1 {
+  font-size: 1.2em;
+  font-weight: 900;
+}
+body .card .content .postDescription p {
+  color: hsl(0, 0%, 50%);
+}
+body .card .content .userInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+}
+body .card .content .userInfo img {
+  width: 2em;
+  height: 2em;
+}
+body .card :hover .postTitle {
+  color: hsl(47, 88%, 63%);
+}
+@media (max-width: 480px) {
+  body .card {
+    height: 480px;
+    width: 280px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

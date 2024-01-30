@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+$primary: hsl(47, 88%, 63%);
+$white: hsl(0, 0%, 100%);
+$grey: hsl(0, 0%, 50%);
+$black: hsl(0, 0%, 7%);
+$font: "Figtree", sans-serif;
+
+/* Breakpoints*/
+$mobile: 480px;
+$tablet: 768px;
+$laptop: 1024px;
+
+@mixin media($size) {
+  @media (max-width: #{$size}) {
+    @content;
+  }
+}
+
+@mixin flex($direction, $x, $y) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $x;
+  align-items: $y;
+}
