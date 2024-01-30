@@ -16,6 +16,8 @@ body {
   background-color: hsl(47, 88%, 63%);
   font-family: "Figtree", sans-serif;
   font-size: 1em;
+  gap: 2em;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,6 +86,14 @@ body .card :hover .postTitle {
     height: 480px;
     width: 280px;
   }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 /*# sourceMappingURL=style.css.map */
